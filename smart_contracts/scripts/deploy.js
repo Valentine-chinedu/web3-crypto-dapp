@@ -4,7 +4,7 @@ const main = async () => {
 	);
 	const transactionsContract = await transactionFactory.deploy();
 
-	await transactionsContract.deploy();
+	await transactionsContract.deployed();
 
 	console.log('Transaction address: ', transactionsContract.address);
 };
