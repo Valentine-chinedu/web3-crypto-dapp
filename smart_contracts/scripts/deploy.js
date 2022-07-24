@@ -8,3 +8,15 @@ const main = async () => {
 
 	console.log('Transaction address: ', transactionsContract.address);
 };
+
+const runMain = async () => {
+	try {
+		await main();
+		process.exit(0);
+	} catch (error) {
+		console.error(error);
+		process.exit(1);
+	}
+};
+
+runMain();
